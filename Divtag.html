@@ -1,44 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     
-    <title>Div tag</title>
-
+    <title>Divtag</title>
     <style>
         .main{
-            width: 500px;
             height: 500px;
-            background-color: skyblue;
+            width: 500px;
+            background-color: blue;
+        }
+        #parentrow1{
+            height: 250px;
+            width: 500px;
+            background-color: bisque;
             
         }
-        #parentrow-1{
-            width: 500px;
+        #parentrow2{
             height: 250px;
-            background-color: red;
+            width: 500px;
+            background-color:blueviolet;
         }
+        .col1{
+            height: 250px;
+            width: 250px;
+            background-color: aquamarine;
+            float: left;
+
+        }
+        .col2{
+            height: 250px;
+            width: 250px;
+            background-color: rgb(255, 127, 244);
+            float: left;
+
+        }
+
     </style>
 </head>
 <body>
-    <div class="main">
-        <div id="parentrow-1">
-            <div>
-              HOME
+    <div class="main">       <!--main div-->
+        <div id="parentrow1">    <!--parent row1-->
+            <div class="col1">  <!--col1-->
+                HOME
             </div>
-            <div>
-               About
+            <div>       <!--col2-->
+                ABOUT
             </div>
-        </div>
-    </div>
 
-    <div>
-        <div>
-            <div>
-              HOME
-            </div>
-            <div>
-               About
-            </div>
         </div>
-    </div>
+         <div id="parentrow2">      <!--parent row2-->
+            <div class="col2">    <!--col1-->
+                GALLERY
+            </div>
+            <div>       <!--col2-->
+                CONTACT
+            </div>
+
+         </div>
+
+</div>
+
 </body>
 </html>
